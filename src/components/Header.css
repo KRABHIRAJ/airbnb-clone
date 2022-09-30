@@ -1,0 +1,145 @@
+.header__container{
+  position: sticky;
+  top: 0;
+  z-index: 120;
+  background-color: white;
+}
+.header{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+   
+}
+.header__logo{
+    width: 110px;
+    margin: 10px 20px;
+  }
+
+  .header__center{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    flex: 1;
+  }
+
+  .header__search{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+    padding: 9px 15px;
+    box-shadow: 3px 2px 21px -19px rgba(0,0,0,0.75);
+    margin: auto;
+
+  }
+  .headersearch__left {
+    display: flex;
+  }
+  .headersearch__left > span{
+    padding: 0 10px;
+    font-weight: 600;
+    border-right: 1px solid lightgray;
+    
+  }
+
+  .active__item{
+    padding: 0 10px;
+    color: gray;
+  }
+
+  .header__searchicon{
+    font-size: 20px !important;
+    border: 1px solid #FF5A5F;
+    border-radius: 100%;
+    padding: 4px;
+    background-color: #FF5A5F;
+    color: white;
+
+  }
+
+  .header__right{
+    display: flex;
+    align-items: center;
+    margin-right:20px;
+  }
+
+  .profile__details{
+    display: flex;
+    align-items: center;
+  }
+
+  .header__right > strong{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 250ms;
+  }
+
+  .header__right > strong:hover{
+        background-color: rgb(236, 236, 236);
+  }
+
+  .language__icon{
+    cursor: pointer;
+    font-size: 20px !important;
+    font-weight: 100 !important;
+    padding: 10px;
+    border-radius: 999px;
+    color: rgb(71, 71, 71);
+  }
+
+  .language__icon:hover{
+    background-color: rgb(236, 236, 236);
+
+  }
+  .profile__details{
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 250ms;
+  }
+
+  .profile__details:hover{
+    box-shadow: 2px 2px 21px -12px rgba(0,0,0,0.75);
+
+  }
+  .profile__photo{
+    margin-left: 10px;
+    height: 30px !important;
+    width: 30px !important;
+  }
+
+
+
+
+
+
+  @media(max-width:820px){
+    .header__right{
+      display: none;
+      
+    }
+    .header__logo{
+      display: none;
+    }
+    .header__center{
+      padding: 10px 0;
+      margin: 0 30px;
+    }
+
+    .header{
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+    }
+    .header__search{
+      flex: 1;
+      justify-content: space-evenly;
+    }
+  }

@@ -1,0 +1,60 @@
+.datepicker__container{
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    /* background-color: white; */
+    z-index: 100;
+
+}
+.datepicker{
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 15px;
+}
+
+.guests{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.guests > p {
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.guests > input{
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button__container{
+    width: 100%;
+    display: flex;
+
+}
+
+.button{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 65px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #FF5A5F;
+    color: white;
+    cursor: pointer;
+    transition: all 250ms;
+}
+
+.button:hover{
+    background-color: #f8444a;
+}

@@ -1,0 +1,23 @@
+.options{
+    display: flex;
+    padding: 20px 40px;
+    overflow: scroll;
+    position: sticky;
+    top: 75px;
+    background-color: white;
+    z-index: 10;
+}
+
+.options {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.options::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+@media(max-width:768px){
+    .options{
+        margin: 20px;
+    }
+}
